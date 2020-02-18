@@ -20,13 +20,13 @@
     <active>true</active>
     <variablesSize>2</variablesSize>
     <EnvironmentVariable className="webtool.environment.EnvironmentVariable" version="3">
-     <maskValue>AgAAACAaaCxLBNkYtbuwteQcHL4FBA9PnT8eT3TGoOmEfZSj0A==</maskValue>
-     <value>AgAAAFDQBNPDA1Zfu0RW3oyUmA9PpKf7Px4JW1vh/rDKu+ysWFOiFsueUzvT4HkZzZjpZKvWT1zcsEckR9vdnTJTqahNDR/VpLTO/bZZYh0sKpTnoQ==</value>
+     <maskValue>AgAAACDR99BfzTMSyaTqoMInbQDkdSi2gko3Or5S58XG/Xhltg==</maskValue>
+     <value>AgAAAFD/5b83tc3EH7QhJlZA+eFjB7xKJ5tulCUTFuIzt1XPftZT0Bv8+oix7qYa+sJZLk8jVxbsm3PyPNaBtgNlJkcd5IFE55D3O7I7UiPxWryaQw==</value>
      <name>ENDPOINT</name>
     </EnvironmentVariable>
     <EnvironmentVariable className="webtool.environment.EnvironmentVariable" version="3">
-     <maskValue>AgAAACAX3/SmYyfZW40PV2A7hU4+wCDxxvR21Y7kdeWqZgAmMQ==</maskValue>
-     <value>AgAAAFB+TxxsbOdZyOJcmccligeAaR6+VL0E3A/5gKUvUcXxi6VJhc27KcG8HNGUFsnxfTZqM+/pIsDYABV80ulRjCMbq8MZMgBZBKhwA29OqAe50w==</value>
+     <maskValue>AgAAACBrmIP2c0xrAxSqD97ixYD0bm6xGgyJio5ViEiw7+Ubxw==</maskValue>
+     <value>AgAAAFAyvXJAov/MimoROmriXKjbnZ6OzasXjq4y4cYps+F1gatMJPbHxFBFF3QjyDzXDlA8ZalsDgTg7javjA7qCDPGQNoesvASwTku7FEJ2+aAVw==</value>
      <name>WSDL</name>
     </EnvironmentVariable>
    </Environment>
@@ -26293,7 +26293,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
                <DecimalValue className="webtool.soap.DecimalValue" version="1.4.1.12">
-                <value>150</value>
+                <value>300</value>
                </DecimalValue>
               </ElementValue>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
