@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SOAtestProject xmlVersion="5" productVersion="9.10.2">
- <TestSuite className="webtool.test.TestSuite" version="44.15.2">
+<SOAtestProject xmlVersion="5" productVersion="9.10.8">
+ <TestSuite className="webtool.test.TestSuite" version="46.15.2">
   <DebugAssets className="webtool.test.debug.DebugAssets" version="1">
   </DebugAssets>
   <ReportingSettings className="webtool.test.ReportingSettings" version="1.1">
@@ -20,13 +20,13 @@
     <active>true</active>
     <variablesSize>2</variablesSize>
     <EnvironmentVariable className="webtool.environment.EnvironmentVariable" version="3">
-     <maskValue>AgAAACAj9sgiSWb4AEA2EguKnmiqUMTzzLazx+kQ+fVI1vTmnQ==</maskValue>
-     <value>AgAAAFBPCOjifEFXeCVhu6lJ7kbT1yvrVUU2549r5v6adwr+XlAIDETCyj38b/OUdFDGnFSkccqoQ7IwCjxppWSwFQMkHtFnvp7jpJD0ySc/JmKDPQ==</value>
+     <maskValue>AgAAACAaaCxLBNkYtbuwteQcHL4FBA9PnT8eT3TGoOmEfZSj0A==</maskValue>
+     <value>AgAAAFDQBNPDA1Zfu0RW3oyUmA9PpKf7Px4JW1vh/rDKu+ysWFOiFsueUzvT4HkZzZjpZKvWT1zcsEckR9vdnTJTqahNDR/VpLTO/bZZYh0sKpTnoQ==</value>
      <name>ENDPOINT</name>
     </EnvironmentVariable>
     <EnvironmentVariable className="webtool.environment.EnvironmentVariable" version="3">
-     <maskValue>AgAAACC2wkqDshDELaQewkcX1ZZ0VPmN65liEc2WOmGRC/Jk9w==</maskValue>
-     <value>AgAAAFCjK2N70dz7f0U3djnkKcKfbTBM9QwhCYsSzuVFIg6Rrd7UwVR3WvI4tbnFMxq5kFCel3ROKsrbrAQ26RaD0PreIP70pRhCSEmjUUz3IP4qDA==</value>
+     <maskValue>AgAAACAX3/SmYyfZW40PV2A7hU4+wCDxxvR21Y7kdeWqZgAmMQ==</maskValue>
+     <value>AgAAAFB+TxxsbOdZyOJcmccligeAaR6+VL0E3A/5gKUvUcXxi6VJhc27KcG8HNGUFsnxfTZqM+/pIsDYABV80ulRjCMbq8MZMgBZBKhwA29OqAe50w==</value>
      <name>WSDL</name>
     </EnvironmentVariable>
    </Environment>
@@ -70,7 +70,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
     </CompositeBrowserType>
    </DefaultCustomBrowserType>
   </TestSuiteBrowserTestingOptions>
-  <TestSuiteSoapClientOptions className="webtool.test.TestSuiteSoapClientOptions" version="1.2">
+  <TestSuiteSoapClientOptions className="webtool.test.TestSuiteSoapClientOptions" version="1.3">
    <WsdlEndpointOptions className="webtool.tool.WsdlEndpointOptions" version="1.1">
     <DefaultCustomWsdl className="webtool.tool.DefaultCustomWsdl" version="1.1.1">
     </DefaultCustomWsdl>
@@ -99,7 +99,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
    </SOAPRPCToolOptions>
   </TestSuiteSoapClientOptions>
   <profileMappingID>0</profileMappingID>
-  <maxProfileMappingID>46</maxProfileMappingID>
+  <maxProfileMappingID>47</maxProfileMappingID>
   <testLogicVariablesSize>3</testLogicVariablesSize>
   <TestLogicInteger className="webtool.test.logic.TestLogicInteger" version="1.1.1">
    <name>varCustomerId</name>
@@ -147,7 +147,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
    <testID>86</testID>
    <enabled>true</enabled>
    <name>cleanDB 2</name>
-   <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.45.14">
+   <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.46.14">
     <iconName>SOAPClient</iconName>
     <name>cleanDB</name>
     <hasServiceInfo>true</hasServiceInfo>
@@ -1280,7 +1280,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
           </MultiValue>
          </NameValuePair>
         </ApplyableMQQueueManagerPropertiesConfiguration>
-        <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.1">
+        <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.2">
          <NameValuePair className="webtool.data.NameValuePair" version="3.3">
           <name>Peer Name</name>
           <MultiValue className="webtool.data.MultiValue" version="1.4">
@@ -1771,6 +1771,43 @@ Timestamp: 2017-07-12 18:12:38</notes>
        <NoneTransportProperties className="webtool.messaging.NoneTransportProperties" version="1">
        </NoneTransportProperties>
        <CustomTransportProperties className="webtool.messaging.CustomTransportProperties" version="1">
+        <numberCustomTransports>4</numberCustomTransports>
+        <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+         <ConfigClassName>com.parasoft.soavirt.transport.mqtt.MqttTransport</ConfigClassName>
+         <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+         </CustomValueMap>
+         <className>com.parasoft.soavirt.transport.mqtt.MqttTransport</className>
+         <name>MQTT</name>
+         <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+         </ApplyableBooleanConfiguration>
+        </CustomTransportConfigurationImpl>
+        <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+         <ConfigClassName>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</ConfigClassName>
+         <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+         </CustomValueMap>
+         <className>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</className>
+         <name>RabbitMQ (AMQP)</name>
+         <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+         </ApplyableBooleanConfiguration>
+        </CustomTransportConfigurationImpl>
+        <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+         <ConfigClassName>com.parasoft.soavirt.transport.kafka.KafkaTransport</ConfigClassName>
+         <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+         </CustomValueMap>
+         <className>com.parasoft.soavirt.transport.kafka.KafkaTransport</className>
+         <name>Kafka</name>
+         <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+         </ApplyableBooleanConfiguration>
+        </CustomTransportConfigurationImpl>
+        <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+         <ConfigClassName>com.parasoft.soavirt.transport.websocket.WebSocketTransport</ConfigClassName>
+         <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+         </CustomValueMap>
+         <className>com.parasoft.soavirt.transport.websocket.WebSocketTransport</className>
+         <name>WebSocket</name>
+         <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+         </ApplyableBooleanConfiguration>
+        </CustomTransportConfigurationImpl>
        </CustomTransportProperties>
       </ProtocolPropertiesManager>
       <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
@@ -1780,7 +1817,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
      <soapCall>true</soapCall>
      <SoapCall className="webtool.soap.SoapCall" version="11">
       <soapMethod>true</soapMethod>
-      <SoapMethod className="webtool.soap.SoapMethod" version="19">
+      <SoapMethod className="webtool.soap.SoapMethod" version="20">
        <longName>cleanDB</longName>
        <portTypeNamespace>http://service.parabank.parasoft.com/</portTypeNamespace>
        <outputName>cleanDBResponse</outputName>
@@ -1941,9 +1978,9 @@ Timestamp: 2017-07-12 18:12:38</notes>
     <mimeType>text/plain</mimeType>
    </SOAPRPCTool>
   </SOAPRPCToolTest>
-  <nextIdentifier>93</nextIdentifier>
+  <nextIdentifier>95</nextIdentifier>
   <testsSize>1</testsSize>
-  <TestSuite className="webtool.test.TestSuite" version="44.15.2">
+  <TestSuite className="webtool.test.TestSuite" version="46.15.2">
    <DebugAssets className="webtool.test.debug.DebugAssets" version="1">
    </DebugAssets>
    <ReportingSettings className="webtool.test.ReportingSettings" version="1.1">
@@ -1999,7 +2036,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
      </CompositeBrowserType>
     </DefaultCustomBrowserType>
    </TestSuiteBrowserTestingOptions>
-   <TestSuiteSoapClientOptions className="webtool.test.TestSuiteSoapClientOptions" version="1.2">
+   <TestSuiteSoapClientOptions className="webtool.test.TestSuiteSoapClientOptions" version="1.3">
     <WsdlEndpointOptions className="webtool.tool.WsdlEndpointOptions" version="1.1">
      <DefaultCustomWsdl className="webtool.tool.DefaultCustomWsdl" version="1.1.1">
       <useDefault>false</useDefault>
@@ -2459,7 +2496,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
     <testID>3</testID>
     <enabled>true</enabled>
     <name>buyPosition</name>
-    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.45.14">
+    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.46.14">
      <iconName>SOAPClient</iconName>
      <name>buyPosition</name>
      <hasServiceInfo>true</hasServiceInfo>
@@ -3592,7 +3629,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
            </MultiValue>
           </NameValuePair>
          </ApplyableMQQueueManagerPropertiesConfiguration>
-         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.1">
+         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.2">
           <NameValuePair className="webtool.data.NameValuePair" version="3.3">
            <name>Peer Name</name>
            <MultiValue className="webtool.data.MultiValue" version="1.4">
@@ -4083,6 +4120,43 @@ Timestamp: 2017-07-12 18:12:38</notes>
         <NoneTransportProperties className="webtool.messaging.NoneTransportProperties" version="1">
         </NoneTransportProperties>
         <CustomTransportProperties className="webtool.messaging.CustomTransportProperties" version="1">
+         <numberCustomTransports>4</numberCustomTransports>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.mqtt.MqttTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.mqtt.MqttTransport</className>
+          <name>MQTT</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</className>
+          <name>RabbitMQ (AMQP)</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.kafka.KafkaTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.kafka.KafkaTransport</className>
+          <name>Kafka</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.websocket.WebSocketTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.websocket.WebSocketTransport</className>
+          <name>WebSocket</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
         </CustomTransportProperties>
        </ProtocolPropertiesManager>
        <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
@@ -4092,7 +4166,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
       <soapCall>true</soapCall>
       <SoapCall className="webtool.soap.SoapCall" version="11">
        <soapMethod>true</soapMethod>
-       <SoapMethod className="webtool.soap.SoapMethod" version="19">
+       <SoapMethod className="webtool.soap.SoapMethod" version="20">
         <longName>buyPosition</longName>
         <faults size="1">
          <fault index="0">ParaBankServiceException</fault>
@@ -4147,39 +4221,39 @@ Timestamp: 2017-07-12 18:12:38</notes>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
                  <hash>9</hash>
                  <localName>customerId</localName>
-                 <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
-                  <hash>10</hash>
+                 <IntegerType className="webtool.soap.IntegerType" version="2">
+                  <hash>8</hash>
                  </IntegerType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>11</hash>
+                 <hash>10</hash>
                  <minOccurs>0</minOccurs>
                  <localName>name</localName>
                  <StringType className="webtool.soap.StringType" version="2.5.3">
-                  <hash>12</hash>
+                  <hash>11</hash>
+                 </StringType>
+                </ElementType>
+                <ElementType className="webtool.soap.ElementType" version="2.12.3">
+                 <hash>12</hash>
+                 <minOccurs>0</minOccurs>
+                 <localName>symbol</localName>
+                 <StringType className="webtool.soap.StringType" version="2">
+                  <hash>11</hash>
                  </StringType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
                  <hash>13</hash>
-                 <minOccurs>0</minOccurs>
-                 <localName>symbol</localName>
-                 <StringType className="webtool.soap.StringType" version="2.5.3">
-                  <hash>14</hash>
-                 </StringType>
-                </ElementType>
-                <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>15</hash>
                  <localName>shares</localName>
-                 <IntegerType className="webtool.soap.IntegerType" version="2">
-                  <hash>10</hash>
+                 <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
+                  <hash>14</hash>
                  </IntegerType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>16</hash>
+                 <hash>15</hash>
                  <minOccurs>0</minOccurs>
                  <localName>purchasePrice</localName>
                  <DecimalType className="webtool.soap.DecimalType" version="2.2.3">
-                  <hash>17</hash>
+                  <hash>16</hash>
                  </DecimalType>
                 </ElementType>
                </SequenceCompositor>
@@ -4272,40 +4346,40 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <hash>6</hash>
               <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>accountId</localName>
-              <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
-               <hash>7</hash>
+              <IntegerType className="webtool.soap.IntegerType" version="2">
+               <hash>5</hash>
               </IntegerType>
              </ElementType>
              <ElementType className="webtool.soap.ElementType" version="2.12.3">
-              <hash>8</hash>
+              <hash>7</hash>
               <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>name</localName>
               <StringType className="webtool.soap.StringType" version="2.5.3">
-               <hash>9</hash>
+               <hash>8</hash>
+              </StringType>
+             </ElementType>
+             <ElementType className="webtool.soap.ElementType" version="2.12.3">
+              <hash>9</hash>
+              <namespace>http://service.parabank.parasoft.com/</namespace>
+              <localName>symbol</localName>
+              <StringType className="webtool.soap.StringType" version="2">
+               <hash>8</hash>
               </StringType>
              </ElementType>
              <ElementType className="webtool.soap.ElementType" version="2.12.3">
               <hash>10</hash>
               <namespace>http://service.parabank.parasoft.com/</namespace>
-              <localName>symbol</localName>
-              <StringType className="webtool.soap.StringType" version="2.5.3">
+              <localName>shares</localName>
+              <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
                <hash>11</hash>
-              </StringType>
+              </IntegerType>
              </ElementType>
              <ElementType className="webtool.soap.ElementType" version="2.12.3">
               <hash>12</hash>
               <namespace>http://service.parabank.parasoft.com/</namespace>
-              <localName>shares</localName>
-              <IntegerType className="webtool.soap.IntegerType" version="2">
-               <hash>7</hash>
-              </IntegerType>
-             </ElementType>
-             <ElementType className="webtool.soap.ElementType" version="2.12.3">
-              <hash>13</hash>
-              <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>pricePerShare</localName>
               <DecimalType className="webtool.soap.DecimalType" version="2.2.3">
-               <hash>14</hash>
+               <hash>13</hash>
               </DecimalType>
              </ElementType>
             </SequenceCompositor>
@@ -4337,13 +4411,13 @@ Timestamp: 2017-07-12 18:12:38</notes>
               </ElementValue>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value></value>
                </StringValue>
               </ElementValue>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value></value>
                </StringValue>
               </ElementValue>
@@ -4512,7 +4586,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
     <testID>6</testID>
     <enabled>true</enabled>
     <name>createAccount</name>
-    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.45.14">
+    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.46.14">
      <iconName>SOAPClient</iconName>
      <name>createAccount</name>
      <hasServiceInfo>true</hasServiceInfo>
@@ -5666,7 +5740,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
            </MultiValue>
           </NameValuePair>
          </ApplyableMQQueueManagerPropertiesConfiguration>
-         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.1">
+         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.2">
           <NameValuePair className="webtool.data.NameValuePair" version="3.3">
            <name>Peer Name</name>
            <MultiValue className="webtool.data.MultiValue" version="1.4">
@@ -6157,6 +6231,43 @@ Timestamp: 2017-07-12 18:12:38</notes>
         <NoneTransportProperties className="webtool.messaging.NoneTransportProperties" version="1">
         </NoneTransportProperties>
         <CustomTransportProperties className="webtool.messaging.CustomTransportProperties" version="1">
+         <numberCustomTransports>4</numberCustomTransports>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.mqtt.MqttTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.mqtt.MqttTransport</className>
+          <name>MQTT</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</className>
+          <name>RabbitMQ (AMQP)</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.kafka.KafkaTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.kafka.KafkaTransport</className>
+          <name>Kafka</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.websocket.WebSocketTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.websocket.WebSocketTransport</className>
+          <name>WebSocket</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
         </CustomTransportProperties>
        </ProtocolPropertiesManager>
        <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
@@ -6166,7 +6277,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
       <soapCall>true</soapCall>
       <SoapCall className="webtool.soap.SoapCall" version="11">
        <soapMethod>true</soapMethod>
-       <SoapMethod className="webtool.soap.SoapMethod" version="19">
+       <SoapMethod className="webtool.soap.SoapMethod" version="20">
         <longName>createAccount</longName>
         <faults size="1">
          <fault index="0">ParaBankServiceException</fault>
@@ -6220,16 +6331,16 @@ Timestamp: 2017-07-12 18:12:38</notes>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
                  <hash>9</hash>
                  <localName>customerId</localName>
-                 <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
-                  <hash>10</hash>
+                 <IntegerType className="webtool.soap.IntegerType" version="2">
+                  <hash>8</hash>
                  </IntegerType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>11</hash>
+                 <hash>10</hash>
                  <minOccurs>0</minOccurs>
                  <localName>type</localName>
                  <EnumType className="webtool.soap.EnumType" version="2.5.3">
-                  <hash>12</hash>
+                  <hash>11</hash>
                   <values size="3">
                    <value index="0">CHECKING</value>
                    <value index="1">SAVINGS</value>
@@ -6241,11 +6352,11 @@ Timestamp: 2017-07-12 18:12:38</notes>
                  </EnumType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>13</hash>
+                 <hash>12</hash>
                  <minOccurs>0</minOccurs>
                  <localName>balance</localName>
                  <DecimalType className="webtool.soap.DecimalType" version="2.2.3">
-                  <hash>14</hash>
+                  <hash>13</hash>
                  </DecimalType>
                 </ElementType>
                </SequenceCompositor>
@@ -6330,16 +6441,16 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <hash>6</hash>
               <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>newAccountType</localName>
-              <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
-               <hash>7</hash>
+              <IntegerType className="webtool.soap.IntegerType" version="2">
+               <hash>5</hash>
               </IntegerType>
              </ElementType>
              <ElementType className="webtool.soap.ElementType" version="2.12.3">
-              <hash>8</hash>
+              <hash>7</hash>
               <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>fromAccountId</localName>
-              <IntegerType className="webtool.soap.IntegerType" version="2">
-               <hash>7</hash>
+              <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
+               <hash>8</hash>
               </IntegerType>
              </ElementType>
             </SequenceCompositor>
@@ -6507,7 +6618,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
     <testID>12</testID>
     <enabled>true</enabled>
     <name>deposit</name>
-    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.45.14">
+    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.46.14">
      <iconName>SOAPClient</iconName>
      <name>deposit</name>
      <hasServiceInfo>true</hasServiceInfo>
@@ -7638,7 +7749,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
            </MultiValue>
           </NameValuePair>
          </ApplyableMQQueueManagerPropertiesConfiguration>
-         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.1">
+         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.2">
           <NameValuePair className="webtool.data.NameValuePair" version="3.3">
            <name>Peer Name</name>
            <MultiValue className="webtool.data.MultiValue" version="1.4">
@@ -8129,6 +8240,43 @@ Timestamp: 2017-07-12 18:12:38</notes>
         <NoneTransportProperties className="webtool.messaging.NoneTransportProperties" version="1">
         </NoneTransportProperties>
         <CustomTransportProperties className="webtool.messaging.CustomTransportProperties" version="1">
+         <numberCustomTransports>4</numberCustomTransports>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.mqtt.MqttTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.mqtt.MqttTransport</className>
+          <name>MQTT</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</className>
+          <name>RabbitMQ (AMQP)</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.kafka.KafkaTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.kafka.KafkaTransport</className>
+          <name>Kafka</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.websocket.WebSocketTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.websocket.WebSocketTransport</className>
+          <name>WebSocket</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
         </CustomTransportProperties>
        </ProtocolPropertiesManager>
        <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
@@ -8138,7 +8286,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
       <soapCall>true</soapCall>
       <SoapCall className="webtool.soap.SoapCall" version="11">
        <soapMethod>true</soapMethod>
-       <SoapMethod className="webtool.soap.SoapMethod" version="19">
+       <SoapMethod className="webtool.soap.SoapMethod" version="20">
         <longName>deposit</longName>
         <faults size="1">
          <fault index="0">ParaBankServiceException</fault>
@@ -8191,7 +8339,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <valuesSize>1</valuesSize>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value></value>
                </StringValue>
               </ElementValue>
@@ -8387,7 +8535,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
     <testID>27</testID>
     <enabled>true</enabled>
     <name>getAccount</name>
-    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.45.14">
+    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.46.14">
      <iconName>SOAPClient</iconName>
      <name>getAccount</name>
      <hasServiceInfo>true</hasServiceInfo>
@@ -9518,7 +9666,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
            </MultiValue>
           </NameValuePair>
          </ApplyableMQQueueManagerPropertiesConfiguration>
-         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.1">
+         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.2">
           <NameValuePair className="webtool.data.NameValuePair" version="3.3">
            <name>Peer Name</name>
            <MultiValue className="webtool.data.MultiValue" version="1.4">
@@ -10009,6 +10157,43 @@ Timestamp: 2017-07-12 18:12:38</notes>
         <NoneTransportProperties className="webtool.messaging.NoneTransportProperties" version="1">
         </NoneTransportProperties>
         <CustomTransportProperties className="webtool.messaging.CustomTransportProperties" version="1">
+         <numberCustomTransports>4</numberCustomTransports>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.mqtt.MqttTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.mqtt.MqttTransport</className>
+          <name>MQTT</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</className>
+          <name>RabbitMQ (AMQP)</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.kafka.KafkaTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.kafka.KafkaTransport</className>
+          <name>Kafka</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.websocket.WebSocketTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.websocket.WebSocketTransport</className>
+          <name>WebSocket</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
         </CustomTransportProperties>
        </ProtocolPropertiesManager>
        <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
@@ -10018,7 +10203,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
       <soapCall>true</soapCall>
       <SoapCall className="webtool.soap.SoapCall" version="11">
        <soapMethod>true</soapMethod>
-       <SoapMethod className="webtool.soap.SoapMethod" version="19">
+       <SoapMethod className="webtool.soap.SoapMethod" version="20">
         <longName>getAccount</longName>
         <faults size="1">
          <fault index="0">ParaBankServiceException</fault>
@@ -10072,16 +10257,16 @@ Timestamp: 2017-07-12 18:12:38</notes>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
                  <hash>9</hash>
                  <localName>customerId</localName>
-                 <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
-                  <hash>10</hash>
+                 <IntegerType className="webtool.soap.IntegerType" version="2">
+                  <hash>8</hash>
                  </IntegerType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>11</hash>
+                 <hash>10</hash>
                  <minOccurs>0</minOccurs>
                  <localName>type</localName>
                  <EnumType className="webtool.soap.EnumType" version="2.5.3">
-                  <hash>12</hash>
+                  <hash>11</hash>
                   <values size="3">
                    <value index="0">CHECKING</value>
                    <value index="1">SAVINGS</value>
@@ -10093,11 +10278,11 @@ Timestamp: 2017-07-12 18:12:38</notes>
                  </EnumType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>13</hash>
+                 <hash>12</hash>
                  <minOccurs>0</minOccurs>
                  <localName>balance</localName>
                  <DecimalType className="webtool.soap.DecimalType" version="2.2.3">
-                  <hash>14</hash>
+                  <hash>13</hash>
                  </DecimalType>
                 </ElementType>
                </SequenceCompositor>
@@ -10315,7 +10500,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
     <testID>7</testID>
     <enabled>true</enabled>
     <name>getAccounts</name>
-    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.45.14">
+    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.46.14">
      <iconName>SOAPClient</iconName>
      <name>getAccounts</name>
      <hasServiceInfo>true</hasServiceInfo>
@@ -11446,7 +11631,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
            </MultiValue>
           </NameValuePair>
          </ApplyableMQQueueManagerPropertiesConfiguration>
-         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.1">
+         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.2">
           <NameValuePair className="webtool.data.NameValuePair" version="3.3">
            <name>Peer Name</name>
            <MultiValue className="webtool.data.MultiValue" version="1.4">
@@ -11937,6 +12122,43 @@ Timestamp: 2017-07-12 18:12:38</notes>
         <NoneTransportProperties className="webtool.messaging.NoneTransportProperties" version="1">
         </NoneTransportProperties>
         <CustomTransportProperties className="webtool.messaging.CustomTransportProperties" version="1">
+         <numberCustomTransports>4</numberCustomTransports>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.mqtt.MqttTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.mqtt.MqttTransport</className>
+          <name>MQTT</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</className>
+          <name>RabbitMQ (AMQP)</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.kafka.KafkaTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.kafka.KafkaTransport</className>
+          <name>Kafka</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.websocket.WebSocketTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.websocket.WebSocketTransport</className>
+          <name>WebSocket</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
         </CustomTransportProperties>
        </ProtocolPropertiesManager>
        <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
@@ -11946,7 +12168,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
       <soapCall>true</soapCall>
       <SoapCall className="webtool.soap.SoapCall" version="11">
        <soapMethod>true</soapMethod>
-       <SoapMethod className="webtool.soap.SoapMethod" version="19">
+       <SoapMethod className="webtool.soap.SoapMethod" version="20">
         <longName>getAccounts</longName>
         <faults size="1">
          <fault index="0">ParaBankServiceException</fault>
@@ -12001,16 +12223,16 @@ Timestamp: 2017-07-12 18:12:38</notes>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
                  <hash>9</hash>
                  <localName>customerId</localName>
-                 <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
-                  <hash>10</hash>
+                 <IntegerType className="webtool.soap.IntegerType" version="2">
+                  <hash>8</hash>
                  </IntegerType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>11</hash>
+                 <hash>10</hash>
                  <minOccurs>0</minOccurs>
                  <localName>type</localName>
                  <EnumType className="webtool.soap.EnumType" version="2.5.3">
-                  <hash>12</hash>
+                  <hash>11</hash>
                   <values size="3">
                    <value index="0">CHECKING</value>
                    <value index="1">SAVINGS</value>
@@ -12022,11 +12244,11 @@ Timestamp: 2017-07-12 18:12:38</notes>
                  </EnumType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>13</hash>
+                 <hash>12</hash>
                  <minOccurs>0</minOccurs>
                  <localName>balance</localName>
                  <DecimalType className="webtool.soap.DecimalType" version="2.2.3">
-                  <hash>14</hash>
+                  <hash>13</hash>
                  </DecimalType>
                 </ElementType>
                </SequenceCompositor>
@@ -12244,7 +12466,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
     <testID>4</testID>
     <enabled>true</enabled>
     <name>getCustomer</name>
-    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.45.14">
+    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.46.14">
      <iconName>SOAPClient</iconName>
      <name>getCustomer</name>
      <hasServiceInfo>true</hasServiceInfo>
@@ -13375,7 +13597,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
            </MultiValue>
           </NameValuePair>
          </ApplyableMQQueueManagerPropertiesConfiguration>
-         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.1">
+         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.2">
           <NameValuePair className="webtool.data.NameValuePair" version="3.3">
            <name>Peer Name</name>
            <MultiValue className="webtool.data.MultiValue" version="1.4">
@@ -13866,6 +14088,43 @@ Timestamp: 2017-07-12 18:12:38</notes>
         <NoneTransportProperties className="webtool.messaging.NoneTransportProperties" version="1">
         </NoneTransportProperties>
         <CustomTransportProperties className="webtool.messaging.CustomTransportProperties" version="1">
+         <numberCustomTransports>4</numberCustomTransports>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.mqtt.MqttTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.mqtt.MqttTransport</className>
+          <name>MQTT</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</className>
+          <name>RabbitMQ (AMQP)</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.kafka.KafkaTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.kafka.KafkaTransport</className>
+          <name>Kafka</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.websocket.WebSocketTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.websocket.WebSocketTransport</className>
+          <name>WebSocket</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
         </CustomTransportProperties>
        </ProtocolPropertiesManager>
        <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
@@ -13875,7 +14134,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
       <soapCall>true</soapCall>
       <SoapCall className="webtool.soap.SoapCall" version="11">
        <soapMethod>true</soapMethod>
-       <SoapMethod className="webtool.soap.SoapMethod" version="19">
+       <SoapMethod className="webtool.soap.SoapMethod" version="20">
         <longName>getCustomer</longName>
         <faults size="1">
          <fault index="0">ParaBankServiceException</fault>
@@ -13938,28 +14197,28 @@ Timestamp: 2017-07-12 18:12:38</notes>
                  <hash>11</hash>
                  <minOccurs>0</minOccurs>
                  <localName>lastName</localName>
-                 <StringType className="webtool.soap.StringType" version="2.5.3">
-                  <hash>12</hash>
+                 <StringType className="webtool.soap.StringType" version="2">
+                  <hash>10</hash>
                  </StringType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>13</hash>
+                 <hash>12</hash>
                  <minOccurs>0</minOccurs>
                  <localName>address</localName>
                  <ComplexType className="webtool.soap.ComplexType" version="2.10.3">
-                  <hash>14</hash>
+                  <hash>13</hash>
                   <namespace>http://service.parabank.parasoft.com/</namespace>
                   <name>address</name>
                   <compositor>true</compositor>
                   <SequenceCompositor className="webtool.soap.SequenceCompositor" version="2.1.3.3">
-                   <hash>15</hash>
+                   <hash>14</hash>
                    <paramTypesSize>4</paramTypesSize>
                    <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                    <hash>16</hash>
+                    <hash>15</hash>
                     <minOccurs>0</minOccurs>
                     <localName>street</localName>
-                    <StringType className="webtool.soap.StringType" version="2">
-                     <hash>12</hash>
+                    <StringType className="webtool.soap.StringType" version="2.5.3">
+                     <hash>16</hash>
                     </StringType>
                    </ElementType>
                    <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -13967,7 +14226,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
                     <minOccurs>0</minOccurs>
                     <localName>city</localName>
                     <StringType className="webtool.soap.StringType" version="2">
-                     <hash>12</hash>
+                     <hash>16</hash>
                     </StringType>
                    </ElementType>
                    <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -13975,7 +14234,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
                     <minOccurs>0</minOccurs>
                     <localName>state</localName>
                     <StringType className="webtool.soap.StringType" version="2">
-                     <hash>12</hash>
+                     <hash>16</hash>
                     </StringType>
                    </ElementType>
                    <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -13983,7 +14242,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
                     <minOccurs>0</minOccurs>
                     <localName>zipCode</localName>
                     <StringType className="webtool.soap.StringType" version="2">
-                     <hash>12</hash>
+                     <hash>16</hash>
                     </StringType>
                    </ElementType>
                   </SequenceCompositor>
@@ -13994,7 +14253,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
                  <minOccurs>0</minOccurs>
                  <localName>phoneNumber</localName>
                  <StringType className="webtool.soap.StringType" version="2">
-                  <hash>12</hash>
+                  <hash>16</hash>
                  </StringType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -14002,7 +14261,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
                  <minOccurs>0</minOccurs>
                  <localName>ssn</localName>
                  <StringType className="webtool.soap.StringType" version="2">
-                  <hash>12</hash>
+                  <hash>16</hash>
                  </StringType>
                 </ElementType>
                </SequenceCompositor>
@@ -14220,7 +14479,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
     <testID>20</testID>
     <enabled>true</enabled>
     <name>getTransaction</name>
-    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.45.14">
+    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.46.14">
      <iconName>SOAPClient</iconName>
      <name>getTransaction</name>
      <hasServiceInfo>true</hasServiceInfo>
@@ -15351,7 +15610,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
            </MultiValue>
           </NameValuePair>
          </ApplyableMQQueueManagerPropertiesConfiguration>
-         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.1">
+         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.2">
           <NameValuePair className="webtool.data.NameValuePair" version="3.3">
            <name>Peer Name</name>
            <MultiValue className="webtool.data.MultiValue" version="1.4">
@@ -15842,6 +16101,43 @@ Timestamp: 2017-07-12 18:12:38</notes>
         <NoneTransportProperties className="webtool.messaging.NoneTransportProperties" version="1">
         </NoneTransportProperties>
         <CustomTransportProperties className="webtool.messaging.CustomTransportProperties" version="1">
+         <numberCustomTransports>4</numberCustomTransports>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.mqtt.MqttTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.mqtt.MqttTransport</className>
+          <name>MQTT</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</className>
+          <name>RabbitMQ (AMQP)</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.kafka.KafkaTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.kafka.KafkaTransport</className>
+          <name>Kafka</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.websocket.WebSocketTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.websocket.WebSocketTransport</className>
+          <name>WebSocket</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
         </CustomTransportProperties>
        </ProtocolPropertiesManager>
        <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
@@ -15851,7 +16147,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
       <soapCall>true</soapCall>
       <SoapCall className="webtool.soap.SoapCall" version="11">
        <soapMethod>true</soapMethod>
-       <SoapMethod className="webtool.soap.SoapMethod" version="19">
+       <SoapMethod className="webtool.soap.SoapMethod" version="20">
         <longName>getTransaction</longName>
         <faults size="1">
          <fault index="0">ParaBankServiceException</fault>
@@ -15905,16 +16201,16 @@ Timestamp: 2017-07-12 18:12:38</notes>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
                  <hash>9</hash>
                  <localName>accountId</localName>
-                 <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
-                  <hash>10</hash>
+                 <IntegerType className="webtool.soap.IntegerType" version="2">
+                  <hash>8</hash>
                  </IntegerType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>11</hash>
+                 <hash>10</hash>
                  <minOccurs>0</minOccurs>
                  <localName>type</localName>
                  <EnumType className="webtool.soap.EnumType" version="2.5.3">
-                  <hash>12</hash>
+                  <hash>11</hash>
                   <values size="2">
                    <value index="0">Credit</value>
                    <value index="1">Debit</value>
@@ -15925,27 +16221,27 @@ Timestamp: 2017-07-12 18:12:38</notes>
                  </EnumType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>13</hash>
+                 <hash>12</hash>
                  <minOccurs>0</minOccurs>
                  <localName>date</localName>
                  <DateTimeType className="webtool.soap.DateTimeType" version="2.2.3">
-                  <hash>14</hash>
+                  <hash>13</hash>
                  </DateTimeType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>15</hash>
+                 <hash>14</hash>
                  <minOccurs>0</minOccurs>
                  <localName>amount</localName>
                  <DecimalType className="webtool.soap.DecimalType" version="2.2.3">
-                  <hash>16</hash>
+                  <hash>15</hash>
                  </DecimalType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>17</hash>
+                 <hash>16</hash>
                  <minOccurs>0</minOccurs>
                  <localName>description</localName>
                  <StringType className="webtool.soap.StringType" version="2.5.3">
-                  <hash>18</hash>
+                  <hash>17</hash>
                  </StringType>
                 </ElementType>
                </SequenceCompositor>
@@ -16167,7 +16463,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
     <testID>8</testID>
     <enabled>true</enabled>
     <name>getTransactions</name>
-    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.45.14">
+    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.46.14">
      <iconName>SOAPClient</iconName>
      <name>getTransactions</name>
      <hasServiceInfo>true</hasServiceInfo>
@@ -17298,7 +17594,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
            </MultiValue>
           </NameValuePair>
          </ApplyableMQQueueManagerPropertiesConfiguration>
-         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.1">
+         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.2">
           <NameValuePair className="webtool.data.NameValuePair" version="3.3">
            <name>Peer Name</name>
            <MultiValue className="webtool.data.MultiValue" version="1.4">
@@ -17789,6 +18085,43 @@ Timestamp: 2017-07-12 18:12:38</notes>
         <NoneTransportProperties className="webtool.messaging.NoneTransportProperties" version="1">
         </NoneTransportProperties>
         <CustomTransportProperties className="webtool.messaging.CustomTransportProperties" version="1">
+         <numberCustomTransports>4</numberCustomTransports>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.mqtt.MqttTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.mqtt.MqttTransport</className>
+          <name>MQTT</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</className>
+          <name>RabbitMQ (AMQP)</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.kafka.KafkaTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.kafka.KafkaTransport</className>
+          <name>Kafka</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.websocket.WebSocketTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.websocket.WebSocketTransport</className>
+          <name>WebSocket</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
         </CustomTransportProperties>
        </ProtocolPropertiesManager>
        <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
@@ -17798,7 +18131,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
       <soapCall>true</soapCall>
       <SoapCall className="webtool.soap.SoapCall" version="11">
        <soapMethod>true</soapMethod>
-       <SoapMethod className="webtool.soap.SoapMethod" version="19">
+       <SoapMethod className="webtool.soap.SoapMethod" version="20">
         <longName>getTransactions</longName>
         <faults size="1">
          <fault index="0">ParaBankServiceException</fault>
@@ -17853,16 +18186,16 @@ Timestamp: 2017-07-12 18:12:38</notes>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
                  <hash>9</hash>
                  <localName>accountId</localName>
-                 <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
-                  <hash>10</hash>
+                 <IntegerType className="webtool.soap.IntegerType" version="2">
+                  <hash>8</hash>
                  </IntegerType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>11</hash>
+                 <hash>10</hash>
                  <minOccurs>0</minOccurs>
                  <localName>type</localName>
                  <EnumType className="webtool.soap.EnumType" version="2.5.3">
-                  <hash>12</hash>
+                  <hash>11</hash>
                   <values size="2">
                    <value index="0">Credit</value>
                    <value index="1">Debit</value>
@@ -17873,27 +18206,27 @@ Timestamp: 2017-07-12 18:12:38</notes>
                  </EnumType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>13</hash>
+                 <hash>12</hash>
                  <minOccurs>0</minOccurs>
                  <localName>date</localName>
                  <DateTimeType className="webtool.soap.DateTimeType" version="2.2.3">
-                  <hash>14</hash>
+                  <hash>13</hash>
                  </DateTimeType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>15</hash>
+                 <hash>14</hash>
                  <minOccurs>0</minOccurs>
                  <localName>amount</localName>
                  <DecimalType className="webtool.soap.DecimalType" version="2.2.3">
-                  <hash>16</hash>
+                  <hash>15</hash>
                  </DecimalType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>17</hash>
+                 <hash>16</hash>
                  <minOccurs>0</minOccurs>
                  <localName>description</localName>
                  <StringType className="webtool.soap.StringType" version="2.5.3">
-                  <hash>18</hash>
+                  <hash>17</hash>
                  </StringType>
                 </ElementType>
                </SequenceCompositor>
@@ -18115,7 +18448,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
     <testID>23</testID>
     <enabled>true</enabled>
     <name>getTransactionsByAmount</name>
-    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.45.14">
+    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.46.14">
      <iconName>SOAPClient</iconName>
      <name>getTransactionsByAmount</name>
      <hasServiceInfo>true</hasServiceInfo>
@@ -19246,7 +19579,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
            </MultiValue>
           </NameValuePair>
          </ApplyableMQQueueManagerPropertiesConfiguration>
-         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.1">
+         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.2">
           <NameValuePair className="webtool.data.NameValuePair" version="3.3">
            <name>Peer Name</name>
            <MultiValue className="webtool.data.MultiValue" version="1.4">
@@ -19737,6 +20070,43 @@ Timestamp: 2017-07-12 18:12:38</notes>
         <NoneTransportProperties className="webtool.messaging.NoneTransportProperties" version="1">
         </NoneTransportProperties>
         <CustomTransportProperties className="webtool.messaging.CustomTransportProperties" version="1">
+         <numberCustomTransports>4</numberCustomTransports>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.mqtt.MqttTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.mqtt.MqttTransport</className>
+          <name>MQTT</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</className>
+          <name>RabbitMQ (AMQP)</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.kafka.KafkaTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.kafka.KafkaTransport</className>
+          <name>Kafka</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.websocket.WebSocketTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.websocket.WebSocketTransport</className>
+          <name>WebSocket</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
         </CustomTransportProperties>
        </ProtocolPropertiesManager>
        <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
@@ -19746,7 +20116,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
       <soapCall>true</soapCall>
       <SoapCall className="webtool.soap.SoapCall" version="11">
        <soapMethod>true</soapMethod>
-       <SoapMethod className="webtool.soap.SoapMethod" version="19">
+       <SoapMethod className="webtool.soap.SoapMethod" version="20">
         <longName>getTransactionsByAmount</longName>
         <faults size="1">
          <fault index="0">ParaBankServiceException</fault>
@@ -19801,16 +20171,16 @@ Timestamp: 2017-07-12 18:12:38</notes>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
                  <hash>9</hash>
                  <localName>accountId</localName>
-                 <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
-                  <hash>10</hash>
+                 <IntegerType className="webtool.soap.IntegerType" version="2">
+                  <hash>8</hash>
                  </IntegerType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>11</hash>
+                 <hash>10</hash>
                  <minOccurs>0</minOccurs>
                  <localName>type</localName>
                  <EnumType className="webtool.soap.EnumType" version="2.5.3">
-                  <hash>12</hash>
+                  <hash>11</hash>
                   <values size="2">
                    <value index="0">Credit</value>
                    <value index="1">Debit</value>
@@ -19821,27 +20191,27 @@ Timestamp: 2017-07-12 18:12:38</notes>
                  </EnumType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>13</hash>
+                 <hash>12</hash>
                  <minOccurs>0</minOccurs>
                  <localName>date</localName>
                  <DateTimeType className="webtool.soap.DateTimeType" version="2.2.3">
-                  <hash>14</hash>
+                  <hash>13</hash>
                  </DateTimeType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>15</hash>
+                 <hash>14</hash>
                  <minOccurs>0</minOccurs>
                  <localName>amount</localName>
                  <DecimalType className="webtool.soap.DecimalType" version="2.2.3">
-                  <hash>16</hash>
+                  <hash>15</hash>
                  </DecimalType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>17</hash>
+                 <hash>16</hash>
                  <minOccurs>0</minOccurs>
                  <localName>description</localName>
                  <StringType className="webtool.soap.StringType" version="2.5.3">
-                  <hash>18</hash>
+                  <hash>17</hash>
                  </StringType>
                 </ElementType>
                </SequenceCompositor>
@@ -20084,7 +20454,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
     <testID>9</testID>
     <enabled>true</enabled>
     <name>getTransactionsOnDate</name>
-    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.45.14">
+    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.46.14">
      <iconName>SOAPClient</iconName>
      <name>getTransactionsOnDate</name>
      <hasServiceInfo>true</hasServiceInfo>
@@ -21215,7 +21585,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
            </MultiValue>
           </NameValuePair>
          </ApplyableMQQueueManagerPropertiesConfiguration>
-         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.1">
+         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.2">
           <NameValuePair className="webtool.data.NameValuePair" version="3.3">
            <name>Peer Name</name>
            <MultiValue className="webtool.data.MultiValue" version="1.4">
@@ -21706,6 +22076,43 @@ Timestamp: 2017-07-12 18:12:38</notes>
         <NoneTransportProperties className="webtool.messaging.NoneTransportProperties" version="1">
         </NoneTransportProperties>
         <CustomTransportProperties className="webtool.messaging.CustomTransportProperties" version="1">
+         <numberCustomTransports>4</numberCustomTransports>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.mqtt.MqttTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.mqtt.MqttTransport</className>
+          <name>MQTT</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</className>
+          <name>RabbitMQ (AMQP)</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.kafka.KafkaTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.kafka.KafkaTransport</className>
+          <name>Kafka</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.websocket.WebSocketTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.websocket.WebSocketTransport</className>
+          <name>WebSocket</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
         </CustomTransportProperties>
        </ProtocolPropertiesManager>
        <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
@@ -21715,7 +22122,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
       <soapCall>true</soapCall>
       <SoapCall className="webtool.soap.SoapCall" version="11">
        <soapMethod>true</soapMethod>
-       <SoapMethod className="webtool.soap.SoapMethod" version="19">
+       <SoapMethod className="webtool.soap.SoapMethod" version="20">
         <longName>buyPosition</longName>
         <faults size="1">
          <fault index="0">ParaBankServiceException</fault>
@@ -21825,13 +22232,13 @@ Timestamp: 2017-07-12 18:12:38</notes>
               </ElementValue>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value></value>
                </StringValue>
               </ElementValue>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value></value>
                </StringValue>
               </ElementValue>
@@ -21972,7 +22379,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
     <testID>17</testID>
     <enabled>true</enabled>
     <name>login</name>
-    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.45.14">
+    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.46.14">
      <iconName>SOAPClient</iconName>
      <name>login</name>
      <hasServiceInfo>true</hasServiceInfo>
@@ -23103,7 +23510,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
            </MultiValue>
           </NameValuePair>
          </ApplyableMQQueueManagerPropertiesConfiguration>
-         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.1">
+         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.2">
           <NameValuePair className="webtool.data.NameValuePair" version="3.3">
            <name>Peer Name</name>
            <MultiValue className="webtool.data.MultiValue" version="1.4">
@@ -23594,6 +24001,43 @@ Timestamp: 2017-07-12 18:12:38</notes>
         <NoneTransportProperties className="webtool.messaging.NoneTransportProperties" version="1">
         </NoneTransportProperties>
         <CustomTransportProperties className="webtool.messaging.CustomTransportProperties" version="1">
+         <numberCustomTransports>4</numberCustomTransports>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.mqtt.MqttTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.mqtt.MqttTransport</className>
+          <name>MQTT</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</className>
+          <name>RabbitMQ (AMQP)</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.kafka.KafkaTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.kafka.KafkaTransport</className>
+          <name>Kafka</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.websocket.WebSocketTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.websocket.WebSocketTransport</className>
+          <name>WebSocket</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
         </CustomTransportProperties>
        </ProtocolPropertiesManager>
        <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
@@ -23603,7 +24047,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
       <soapCall>true</soapCall>
       <SoapCall className="webtool.soap.SoapCall" version="11">
        <soapMethod>true</soapMethod>
-       <SoapMethod className="webtool.soap.SoapMethod" version="19">
+       <SoapMethod className="webtool.soap.SoapMethod" version="20">
         <longName>login</longName>
         <faults size="1">
          <fault index="0">ParaBankServiceException</fault>
@@ -23666,28 +24110,28 @@ Timestamp: 2017-07-12 18:12:38</notes>
                  <hash>11</hash>
                  <minOccurs>0</minOccurs>
                  <localName>lastName</localName>
-                 <StringType className="webtool.soap.StringType" version="2.5.3">
-                  <hash>12</hash>
+                 <StringType className="webtool.soap.StringType" version="2">
+                  <hash>10</hash>
                  </StringType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>13</hash>
+                 <hash>12</hash>
                  <minOccurs>0</minOccurs>
                  <localName>address</localName>
                  <ComplexType className="webtool.soap.ComplexType" version="2.10.3">
-                  <hash>14</hash>
+                  <hash>13</hash>
                   <namespace>http://service.parabank.parasoft.com/</namespace>
                   <name>address</name>
                   <compositor>true</compositor>
                   <SequenceCompositor className="webtool.soap.SequenceCompositor" version="2.1.3.3">
-                   <hash>15</hash>
+                   <hash>14</hash>
                    <paramTypesSize>4</paramTypesSize>
                    <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                    <hash>16</hash>
+                    <hash>15</hash>
                     <minOccurs>0</minOccurs>
                     <localName>street</localName>
-                    <StringType className="webtool.soap.StringType" version="2">
-                     <hash>12</hash>
+                    <StringType className="webtool.soap.StringType" version="2.5.3">
+                     <hash>16</hash>
                     </StringType>
                    </ElementType>
                    <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -23695,7 +24139,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
                     <minOccurs>0</minOccurs>
                     <localName>city</localName>
                     <StringType className="webtool.soap.StringType" version="2">
-                     <hash>12</hash>
+                     <hash>16</hash>
                     </StringType>
                    </ElementType>
                    <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -23703,7 +24147,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
                     <minOccurs>0</minOccurs>
                     <localName>state</localName>
                     <StringType className="webtool.soap.StringType" version="2">
-                     <hash>12</hash>
+                     <hash>16</hash>
                     </StringType>
                    </ElementType>
                    <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -23711,7 +24155,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
                     <minOccurs>0</minOccurs>
                     <localName>zipCode</localName>
                     <StringType className="webtool.soap.StringType" version="2">
-                     <hash>12</hash>
+                     <hash>16</hash>
                     </StringType>
                    </ElementType>
                   </SequenceCompositor>
@@ -23722,7 +24166,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
                  <minOccurs>0</minOccurs>
                  <localName>phoneNumber</localName>
                  <StringType className="webtool.soap.StringType" version="2">
-                  <hash>12</hash>
+                  <hash>16</hash>
                  </StringType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -23730,7 +24174,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
                  <minOccurs>0</minOccurs>
                  <localName>ssn</localName>
                  <StringType className="webtool.soap.StringType" version="2">
-                  <hash>12</hash>
+                  <hash>16</hash>
                  </StringType>
                 </ElementType>
                </SequenceCompositor>
@@ -23815,8 +24259,8 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <hash>6</hash>
               <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>password</localName>
-              <StringType className="webtool.soap.StringType" version="2.5.3">
-               <hash>7</hash>
+              <StringType className="webtool.soap.StringType" version="2">
+               <hash>5</hash>
               </StringType>
              </ElementType>
             </SequenceCompositor>
@@ -23832,13 +24276,13 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <valuesSize>2</valuesSize>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value>john</value>
                </StringValue>
               </ElementValue>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value>demo</value>
                </StringValue>
               </ElementValue>
@@ -23967,13 +24411,13 @@ Timestamp: 2017-07-12 18:12:38</notes>
     <testID>26</testID>
     <enabled>true</enabled>
     <name>requestLoan</name>
-    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.45.14">
+    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.46.14">
      <iconName>SOAPClient</iconName>
      <name>requestLoan</name>
      <hasServiceInfo>true</hasServiceInfo>
      <ServiceInfo className="webtool.tool.ServiceInfo" version="1.2">
       <StandardServiceDescriptor className="com.parasoft.service.catalog.impl.StandardServiceDescriptor" version="1.1">
-       <location>http://54.183.158.26:8080/parabank/services/ParaBank?wsdl</location>
+       <location>http://localhost:8080/parabank/services/ParaBank?wsdl</location>
       </StandardServiceDescriptor>
      </ServiceInfo>
      <SOAPOutputProviderImpl className="webtool.soap.SOAPOutputProviderImpl" version="1.1.1">
@@ -25098,7 +25542,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
            </MultiValue>
           </NameValuePair>
          </ApplyableMQQueueManagerPropertiesConfiguration>
-         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.1">
+         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.2">
           <NameValuePair className="webtool.data.NameValuePair" version="3.3">
            <name>Peer Name</name>
            <MultiValue className="webtool.data.MultiValue" version="1.4">
@@ -25589,6 +26033,43 @@ Timestamp: 2017-07-12 18:12:38</notes>
         <NoneTransportProperties className="webtool.messaging.NoneTransportProperties" version="1">
         </NoneTransportProperties>
         <CustomTransportProperties className="webtool.messaging.CustomTransportProperties" version="1">
+         <numberCustomTransports>4</numberCustomTransports>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.mqtt.MqttTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.mqtt.MqttTransport</className>
+          <name>MQTT</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</className>
+          <name>RabbitMQ (AMQP)</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.kafka.KafkaTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.kafka.KafkaTransport</className>
+          <name>Kafka</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.websocket.WebSocketTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.websocket.WebSocketTransport</className>
+          <name>WebSocket</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
         </CustomTransportProperties>
        </ProtocolPropertiesManager>
        <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
@@ -25598,7 +26079,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
       <soapCall>true</soapCall>
       <SoapCall className="webtool.soap.SoapCall" version="11">
        <soapMethod>true</soapMethod>
-       <SoapMethod className="webtool.soap.SoapMethod" version="19">
+       <SoapMethod className="webtool.soap.SoapMethod" version="20">
         <longName>requestLoan</longName>
         <faults size="1">
          <fault index="0">ParaBankServiceException</fault>
@@ -25668,16 +26149,16 @@ Timestamp: 2017-07-12 18:12:38</notes>
                  <hash>13</hash>
                  <minOccurs>0</minOccurs>
                  <localName>message</localName>
-                 <StringType className="webtool.soap.StringType" version="2.5.3">
-                  <hash>14</hash>
+                 <StringType className="webtool.soap.StringType" version="2">
+                  <hash>10</hash>
                  </StringType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>15</hash>
+                 <hash>14</hash>
                  <minOccurs>0</minOccurs>
                  <localName>accountId</localName>
                  <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
-                  <hash>16</hash>
+                  <hash>15</hash>
                  </IntegerType>
                 </ElementType>
                </SequenceCompositor>
@@ -25707,7 +26188,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
                    </ElementValue>
                    <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                     <size>1</size>
-                    <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+                    <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                      <value></value>
                     </StringValue>
                    </ElementValue>
@@ -25772,16 +26253,16 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <hash>8</hash>
               <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>downPayment</localName>
-              <DecimalType className="webtool.soap.DecimalType" version="2.2.3">
-               <hash>9</hash>
+              <DecimalType className="webtool.soap.DecimalType" version="2">
+               <hash>7</hash>
               </DecimalType>
              </ElementType>
              <ElementType className="webtool.soap.ElementType" version="2.12.3">
-              <hash>10</hash>
+              <hash>9</hash>
               <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>fromAccountId</localName>
-              <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
-               <hash>11</hash>
+              <IntegerType className="webtool.soap.IntegerType" version="2">
+               <hash>5</hash>
               </IntegerType>
              </ElementType>
             </SequenceCompositor>
@@ -25812,7 +26293,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
                <DecimalValue className="webtool.soap.DecimalValue" version="1.4.1.12">
-                <value>1000</value>
+                <value>150</value>
                </DecimalValue>
               </ElementValue>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
@@ -25962,7 +26443,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
     <testID>16</testID>
     <enabled>true</enabled>
     <name>transfer</name>
-    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.45.14">
+    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.46.14">
      <iconName>SOAPClient</iconName>
      <name>transfer</name>
      <hasServiceInfo>true</hasServiceInfo>
@@ -27093,7 +27574,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
            </MultiValue>
           </NameValuePair>
          </ApplyableMQQueueManagerPropertiesConfiguration>
-         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.1">
+         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.2">
           <NameValuePair className="webtool.data.NameValuePair" version="3.3">
            <name>Peer Name</name>
            <MultiValue className="webtool.data.MultiValue" version="1.4">
@@ -27584,6 +28065,43 @@ Timestamp: 2017-07-12 18:12:38</notes>
         <NoneTransportProperties className="webtool.messaging.NoneTransportProperties" version="1">
         </NoneTransportProperties>
         <CustomTransportProperties className="webtool.messaging.CustomTransportProperties" version="1">
+         <numberCustomTransports>4</numberCustomTransports>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.mqtt.MqttTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.mqtt.MqttTransport</className>
+          <name>MQTT</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</className>
+          <name>RabbitMQ (AMQP)</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.kafka.KafkaTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.kafka.KafkaTransport</className>
+          <name>Kafka</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.websocket.WebSocketTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.websocket.WebSocketTransport</className>
+          <name>WebSocket</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
         </CustomTransportProperties>
        </ProtocolPropertiesManager>
        <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
@@ -27593,7 +28111,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
       <soapCall>true</soapCall>
       <SoapCall className="webtool.soap.SoapCall" version="11">
        <soapMethod>true</soapMethod>
-       <SoapMethod className="webtool.soap.SoapMethod" version="19">
+       <SoapMethod className="webtool.soap.SoapMethod" version="20">
         <longName>transfer</longName>
         <faults size="1">
          <fault index="0">ParaBankServiceException</fault>
@@ -27646,7 +28164,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <valuesSize>1</valuesSize>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value></value>
                </StringValue>
               </ElementValue>
@@ -27688,16 +28206,16 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <hash>6</hash>
               <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>toAccountId</localName>
-              <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
-               <hash>7</hash>
+              <IntegerType className="webtool.soap.IntegerType" version="2">
+               <hash>5</hash>
               </IntegerType>
              </ElementType>
              <ElementType className="webtool.soap.ElementType" version="2.12.3">
-              <hash>8</hash>
+              <hash>7</hash>
               <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>amount</localName>
               <DecimalType className="webtool.soap.DecimalType" version="2.2.3">
-               <hash>9</hash>
+               <hash>8</hash>
               </DecimalType>
              </ElementType>
             </SequenceCompositor>
@@ -27865,7 +28383,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
     <testID>11</testID>
     <enabled>true</enabled>
     <name>updateCustomer</name>
-    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.45.14">
+    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.46.14">
      <iconName>SOAPClient</iconName>
      <name>updateCustomer</name>
      <hasServiceInfo>true</hasServiceInfo>
@@ -28996,7 +29514,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
            </MultiValue>
           </NameValuePair>
          </ApplyableMQQueueManagerPropertiesConfiguration>
-         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.1">
+         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.2">
           <NameValuePair className="webtool.data.NameValuePair" version="3.3">
            <name>Peer Name</name>
            <MultiValue className="webtool.data.MultiValue" version="1.4">
@@ -29487,6 +30005,43 @@ Timestamp: 2017-07-12 18:12:38</notes>
         <NoneTransportProperties className="webtool.messaging.NoneTransportProperties" version="1">
         </NoneTransportProperties>
         <CustomTransportProperties className="webtool.messaging.CustomTransportProperties" version="1">
+         <numberCustomTransports>4</numberCustomTransports>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.mqtt.MqttTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.mqtt.MqttTransport</className>
+          <name>MQTT</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</className>
+          <name>RabbitMQ (AMQP)</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.kafka.KafkaTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.kafka.KafkaTransport</className>
+          <name>Kafka</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.websocket.WebSocketTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.websocket.WebSocketTransport</className>
+          <name>WebSocket</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
         </CustomTransportProperties>
        </ProtocolPropertiesManager>
        <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
@@ -29496,7 +30051,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
       <soapCall>true</soapCall>
       <SoapCall className="webtool.soap.SoapCall" version="11">
        <soapMethod>true</soapMethod>
-       <SoapMethod className="webtool.soap.SoapMethod" version="19">
+       <SoapMethod className="webtool.soap.SoapMethod" version="20">
         <longName>updateCustomer</longName>
         <faults size="1">
          <fault index="0">ParaBankServiceException</fault>
@@ -29549,7 +30104,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <valuesSize>1</valuesSize>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value></value>
                </StringValue>
               </ElementValue>
@@ -29599,16 +30154,16 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <hash>8</hash>
               <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>lastName</localName>
-              <StringType className="webtool.soap.StringType" version="2.5.3">
-               <hash>9</hash>
+              <StringType className="webtool.soap.StringType" version="2">
+               <hash>7</hash>
               </StringType>
              </ElementType>
              <ElementType className="webtool.soap.ElementType" version="2.12.3">
-              <hash>10</hash>
+              <hash>9</hash>
               <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>street</localName>
-              <StringType className="webtool.soap.StringType" version="2">
-               <hash>9</hash>
+              <StringType className="webtool.soap.StringType" version="2.5.3">
+               <hash>10</hash>
               </StringType>
              </ElementType>
              <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -29616,7 +30171,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>city</localName>
               <StringType className="webtool.soap.StringType" version="2">
-               <hash>9</hash>
+               <hash>10</hash>
               </StringType>
              </ElementType>
              <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -29624,7 +30179,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>state</localName>
               <StringType className="webtool.soap.StringType" version="2">
-               <hash>9</hash>
+               <hash>10</hash>
               </StringType>
              </ElementType>
              <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -29632,7 +30187,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>zipCode</localName>
               <StringType className="webtool.soap.StringType" version="2">
-               <hash>9</hash>
+               <hash>10</hash>
               </StringType>
              </ElementType>
              <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -29640,7 +30195,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>phoneNumber</localName>
               <StringType className="webtool.soap.StringType" version="2">
-               <hash>9</hash>
+               <hash>10</hash>
               </StringType>
              </ElementType>
              <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -29648,7 +30203,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>ssn</localName>
               <StringType className="webtool.soap.StringType" version="2">
-               <hash>9</hash>
+               <hash>10</hash>
               </StringType>
              </ElementType>
              <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -29656,7 +30211,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>username</localName>
               <StringType className="webtool.soap.StringType" version="2">
-               <hash>9</hash>
+               <hash>10</hash>
               </StringType>
              </ElementType>
              <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -29664,7 +30219,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <namespace>http://service.parabank.parasoft.com/</namespace>
               <localName>password</localName>
               <StringType className="webtool.soap.StringType" version="2">
-               <hash>9</hash>
+               <hash>10</hash>
               </StringType>
              </ElementType>
             </SequenceCompositor>
@@ -29688,61 +30243,61 @@ Timestamp: 2017-07-12 18:12:38</notes>
               </ElementValue>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value>John</value>
                </StringValue>
               </ElementValue>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value>Smith</value>
                </StringValue>
               </ElementValue>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value>1234 front street</value>
                </StringValue>
               </ElementValue>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value>Monrovia</value>
                </StringValue>
               </ElementValue>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value>CA</value>
                </StringValue>
               </ElementValue>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value>90210</value>
                </StringValue>
               </ElementValue>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value>9095551234</value>
                </StringValue>
               </ElementValue>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value>111223333</value>
                </StringValue>
               </ElementValue>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value>john</value>
                </StringValue>
               </ElementValue>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value>demo</value>
                </StringValue>
               </ElementValue>
@@ -29934,7 +30489,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
     <testID>10</testID>
     <enabled>true</enabled>
     <name>withdraw</name>
-    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.45.14">
+    <SOAPRPCTool className="webtool.soap.SOAPRPCTool" version="v.2.46.14">
      <iconName>SOAPClient</iconName>
      <name>withdraw</name>
      <hasServiceInfo>true</hasServiceInfo>
@@ -31065,7 +31620,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
            </MultiValue>
           </NameValuePair>
          </ApplyableMQQueueManagerPropertiesConfiguration>
-         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.1">
+         <ApplyableMQSSLConfiguration className="webtool.messaging.mq.ApplyableMQSSLConfiguration" version="1.2.2">
           <NameValuePair className="webtool.data.NameValuePair" version="3.3">
            <name>Peer Name</name>
            <MultiValue className="webtool.data.MultiValue" version="1.4">
@@ -31556,6 +32111,43 @@ Timestamp: 2017-07-12 18:12:38</notes>
         <NoneTransportProperties className="webtool.messaging.NoneTransportProperties" version="1">
         </NoneTransportProperties>
         <CustomTransportProperties className="webtool.messaging.CustomTransportProperties" version="1">
+         <numberCustomTransports>4</numberCustomTransports>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.mqtt.MqttTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.mqtt.MqttTransport</className>
+          <name>MQTT</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.rabbitmq.RabbitMQTransport</className>
+          <name>RabbitMQ (AMQP)</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.kafka.KafkaTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.kafka.KafkaTransport</className>
+          <name>Kafka</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
+         <CustomTransportConfigurationImpl className="com.parasoft.extension.CustomTransportConfigurationImpl" version="2.1.6">
+          <ConfigClassName>com.parasoft.soavirt.transport.websocket.WebSocketTransport</ConfigClassName>
+          <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+          </CustomValueMap>
+          <className>com.parasoft.soavirt.transport.websocket.WebSocketTransport</className>
+          <name>WebSocket</name>
+          <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
+          </ApplyableBooleanConfiguration>
+         </CustomTransportConfigurationImpl>
         </CustomTransportProperties>
        </ProtocolPropertiesManager>
        <ApplyableBooleanConfiguration className="com.parasoft.gui.ApplyableBooleanConfiguration" version="1.2.2">
@@ -31565,7 +32157,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
       <soapCall>true</soapCall>
       <SoapCall className="webtool.soap.SoapCall" version="11">
        <soapMethod>true</soapMethod>
-       <SoapMethod className="webtool.soap.SoapMethod" version="19">
+       <SoapMethod className="webtool.soap.SoapMethod" version="20">
         <longName>withdraw</longName>
         <faults size="1">
          <fault index="0">ParaBankServiceException</fault>
@@ -31618,7 +32210,7 @@ Timestamp: 2017-07-12 18:12:38</notes>
               <valuesSize>1</valuesSize>
               <ElementValue className="webtool.soap.ElementValue" version="1.11.12">
                <size>1</size>
-               <StringValue className="webtool.soap.StringValue" version="1.7.1.12">
+               <StringValue className="webtool.soap.StringValue" version="1.8.1.12">
                 <value></value>
                </StringValue>
               </ElementValue>
@@ -31795,5 +32387,3 @@ Timestamp: 2017-07-12 18:12:38</notes>
   </TestSuite>
  </TestSuite>
 </SOAtestProject>
-
-
